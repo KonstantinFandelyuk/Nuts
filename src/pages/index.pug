@@ -1,0 +1,28 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		meta(name="description" content="Самые вкусные орехи и сухофрукты. Только свежие, только для вас!")
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
+		link(rel='stylesheet', href='css/style.css')
+		title Орехи Вкусности
+	body#body
+		.wrapper
+			include ../blocks/header.pug
+			.section
+				include ../blocks/about_us.pug
+				include ../blocks/shop.pug
+				include ../blocks/slogan.pug
+				include ../blocks/faq.pug
+				include ../blocks/feedback.pug
+				include ../blocks/contacts.pug
+			include ../blocks/modal.pug
+		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/app.js?v4")
+		script(src="js/contactform.js")

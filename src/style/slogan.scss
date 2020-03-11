@@ -1,0 +1,100 @@
+.slogan {
+	// background-image: url("../img/section/slogan/2.jpg");
+	background-image: url("../img/section/slogan/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media (max-width: 1035px) {
+	.slogan {
+		background-position: top;
+	}
+
+	@media (max-width: 830px) {
+		.slogan {
+			background-position-x: -15px;
+		}
+	}
+
+	@media (max-width: 750px) {
+		.slogan {
+			background-position-x: -86px;
+		}
+	}
+
+	@media (max-width: 592px) {
+		.slogan {
+			background-position-x: -230px;
+		}
+
+		@media (max-width: 430px) {
+			.slogan {
+				background-position-x: -350px;
+			}
+		}
+
+		@media (max-width: 408px) {
+			.slogan {
+				background-position-x: -280px;
+			}
+		}
+	}
+}
+
+.slogan-box__list {
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.slogan-box__list-item {
+	color: black;
+	margin-bottom: 30px;
+}
+
+.slogan-box__list-item :last-child {
+	margin-bottom: 0px;
+}
+
+.slogan-box--title {
+	font-family: $fair;
+	font-size: 40px;
+	margin-bottom: 12px;
+}
+
+@media (max-width: 1035px) {
+	.slogan-box--title {
+		font-size: 35px;
+	}
+
+	@media (max-width: 550px) {
+		.slogan-box--title {
+			font-size: 35px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.slogan-box--title {
+			font-size: 30px;
+		}
+	}
+}
+
+.slogan-box--text {
+	font-family: "Circe";
+	font-size: 20px;
+}
+
+@media (max-width: 1035px) {
+	.slogan-box--text {
+		font-size: 19px;
+	}
+
+	@media (max-width: 660px) {
+		.slogan-box--text {
+			font-size: 17px;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.social__list {
+	display: flex;
+}
+
+.social__list-item {
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+	font-size: 30px;
+	margin-left: 20px;
+	color: black;
+	transition: 0.3s all;
+}
+
+.social__list-item:first-child {
+	margin-left: 0;
+}
+
+.fb::after {
+	content: "\f09a";
+}
+
+.fb:hover::after {
+	color: royalblue;
+	transition: 0.3s all;
+}
+
+.instagram::after {
+	content: "\f16d";
+}
+
+.instagram:hover::after {
+	color: rgb(193, 53, 132);
+	transition: 0.3s all;
+}
+
+.other::after {
+	content: "\f2c6";
+}
+
+.other:hover::after {
+	color: rgb(0, 136, 204);
+	transition: 0.3s all;
+}
