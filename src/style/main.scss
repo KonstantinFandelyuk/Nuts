@@ -1,0 +1,134 @@
+/* ---------Шрифыт----------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic");
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe/Circe-Regular.eot");
+  src: local("../fonts/Circe/Circe"), local("Circe-Regular"),
+    url("../fonts/Circe/Circe-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Circe/Circe-Regular.woff") format("woff"),
+    url("../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,800,800i,900&display=swap&subset=cyrillic");
+/* -------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.hidden-scroll {
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-family: $fair;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 523px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  @media (max-width: 405px) {
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+h2::before,
+h2::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 523px) {
+
+  h2::before,
+  h2::after {
+    content: "";
+    width: 80px;
+  }
+
+  @media (max-width: 447px) {
+
+    h2::before,
+    h2::after {
+      content: "";
+      width: 40px;
+    }
+  }
+}
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition-duration: 0.3s;
+}
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative;
+}
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 15px;
+  }
+}

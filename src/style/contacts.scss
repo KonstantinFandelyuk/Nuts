@@ -1,0 +1,52 @@
+section.contacts {
+	margin-bottom: 0px;
+}
+
+.maps {
+	position: relative;
+}
+
+.maps-info {
+	padding: 20px;
+	text-align: center;
+	position: absolute;
+	top: 120px;
+	left: 12px;
+	width: 300px;
+	height: 200px;
+	background-color: white;
+	box-shadow: 0px 0px 5px 1px rgba(95, 95, 95, 0.20);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(95, 95, 95, 0.20);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(71, 64, 64, 0.2);
+}
+
+.maps-info--phone,
+.maps-info--title,
+.maps-info--mail {
+	color: black;
+	font-family: 'Circe';
+	margin-bottom: 15px;
+}
+
+.maps-info--mail>a,
+.maps-info--phone>a {
+	color: black;
+}
+
+.maps-info--title {
+	font-size: 20px;
+}
+
+.contacts .section__row-2 {
+	margin: 0;
+}
+
+.copyright {
+	background-image: url("../img/section/contacts/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	width: 100%;
+}

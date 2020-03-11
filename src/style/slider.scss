@@ -1,0 +1,92 @@
+/* Слайдер */
+.slick-slider {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+	outline: none;
+}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+// .slick-arrow.slick-prev {
+// 	position: absolute;
+// 	top: 88px;
+// 	left: -100px;
+// 	background-color: transparent;
+// 	font-size: 0;
+// 	display: none;
+// }
+
+// // .slick-arrow.slick-prev::before {
+// // 	content: "";
+// // 	background-image: url("../img/section/feedback/slider/left.png");
+// // 	background-repeat: no-repeat;
+// // 	width: 20px;
+// // 	height: 20px;
+// // 	display: block;
+// // 	display: none;
+// // }
+
+// /* Стрелка вправо */
+// .slick-arrow.slick-next {
+// 	position: absolute;
+// 	top: 88px;
+// 	left: 868px;
+// 	background-color: transparent;
+// 	font-size: 0;
+// 	display: none;
+// }
+
+// // .slick-arrow.slick-next::before {
+// // 	content: "";
+// // 	background-image: url("../img/section/feedback/slider/right.png");
+// // 	background-repeat: no-repeat;
+// // 	width: 20px;
+// // 	height: 20px;
+// // 	display: block;
+// // 	display: none;
+// // }
+
+/* Точки (булиты) */
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 44px;
+	max-width: 770px;
+}
+
+.slick-dots li {
+	list-style: none;
+	margin-left: 30px;
+}
+
+
+/* Элемент точки */
+.slick-dots li button {
+	font-size: 0;
+	// width: 4px;
+	height: 12px;
+	background-color: grey;
+	border-radius: 50%;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+	background-color: $button;
+}
