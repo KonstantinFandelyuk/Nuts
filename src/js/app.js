@@ -6,7 +6,6 @@ const closeModalElement = document.querySelector(".modal__close");
 buttonElement.addEventListener("click", function() {
   bodyElement.classList.add("hidden-scroll");
   modalElement.classList.add("active");
-  modalElement.classList.add("fadeInDown");
 });
 
 closeModalElement.addEventListener("click", function() {
