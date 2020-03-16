@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
     $.ajax({
       type: "POST",
-      url: "http://tastenuts.com/contact.php",
+      url: "https://tastenuts.com/contact.php",
       data: str,
       success: function(msg) {
         if (msg == "OK") {

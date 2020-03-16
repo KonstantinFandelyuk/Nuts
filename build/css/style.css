@@ -615,7 +615,12 @@ input[type="submit"] {
   text-transform: uppercase; }
 
 .product-photo {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  width: 415px;
+  height: 278px; }
+
+.product-photo > img {
+  object-fit: cover; }
 
 .product-tara {
   font-family: "Circe";
@@ -896,7 +901,8 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin-left: 40px; }
+  margin-left: 40px;
+  user-select: none; }
 
 @media (max-width: 670px) {
   .feedback-clients--info {

@@ -150,6 +150,12 @@
 
 .product-photo {
   margin-bottom: 16px;
+  width: 415px;
+  height: 278px;
+}
+
+.product-photo>img {
+  object-fit: cover;
 }
 
 .product-tara {
