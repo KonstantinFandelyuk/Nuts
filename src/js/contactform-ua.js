@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
         if (msg == "OK") {
-          result = "<p>Спасибі за ваше замовлення.</p><p> Завжди раді вас бачити в нашому магазині</p>";
+          result = "<p>Дякую за ваше замовлення.</p><p>Ми зв'яжемося з вами по телефону або в месенджері</p>";
           $(".shop-form").hide();
         } else {
           result = msg;
