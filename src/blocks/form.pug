@@ -6,5 +6,5 @@
 		.shop-form__item
 			input(type="tel", name="tel" value="" id="contact_phone" maxlength="13"  required)
 			label(for="contact_phone") Ваш телефон
-		button(type="submit" name="buy").button.button__buy Заказать
+		button(type="submit" name="buy" onclick="dataLayer.push ({'event': 'formSubmitOK'});").button.button__buy Заказать
 		.delivery__info При заказе от <span>1500грн</span> - доставка новой почтой Бесплатная.

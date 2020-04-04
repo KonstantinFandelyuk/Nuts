@@ -190,7 +190,7 @@ i {
   }
 }
 
-.prodcut-price:checked+i::before {
+.prodcut-price:checked + i::before {
   font-family: "Font Awesome 5 Free";
   font-size: 30px;
   content: "\f14a";
@@ -198,7 +198,7 @@ i {
 }
 
 @media (max-width: 1546px) {
-  .prodcut-price:checked+i::before {
+  .prodcut-price:checked + i::before {
     font-size: 25px;
   }
 }
@@ -243,7 +243,7 @@ i {
   }
 }
 
-.order__list-contact>a {
+.order__list-contact > a {
   color: black;
 }
 
