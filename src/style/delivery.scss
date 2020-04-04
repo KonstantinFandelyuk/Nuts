@@ -23,7 +23,7 @@
 	align-items: center;
 	flex-direction: column;
 	background-color: white;
-	padding: 20px;
+	padding: 40px;
 	border-radius: 12px;
 	max-width: 800px;
 	margin: 0 auto;
@@ -44,16 +44,16 @@
 	margin-bottom: 30px;
 
 	@media (max-width: 770px) {
-		font-size: 22px;
+		font-size: 20px;
 	}
 }
 
 .delivery-img {
-	max-width: 80%;
+	max-width: 60%;
 	margin: 0 auto;
 
 	@media (max-width: 770px) {
-		max-width: 60%;
+		max-width: 40%;
 	}
 }
 
@@ -67,7 +67,7 @@
 	line-height: 30px;
 
 	@media (max-width: 770px) {
-		font-size: 18px;
+		font-size: 17px;
 	}
 }
 
@@ -79,6 +79,10 @@
 	line-height: 30px;
 
 	@media (max-width: 770px) {
-		font-size: 18px;
+		font-size: 17px;
 	}
+}
+
+.button-thanks {
+	margin-top: 10px;
 }
