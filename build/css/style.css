@@ -520,6 +520,12 @@ input[type="submit"] {
   border-radius: 12px;
   max-width: 800px;
   margin: 0 auto; }
+  @media (max-width: 600px) {
+    .delivery__list {
+      padding: 30px; } }
+  @media (max-width: 500px) {
+    .delivery__list {
+      padding: 20px; } }
 
 .delivery__list-item {
   text-align: center; }
@@ -545,9 +551,10 @@ input[type="submit"] {
       max-width: 40%; } }
 
 .delivery-description {
+  text-transform: uppercase;
   max-width: 600px;
   margin-top: 30px;
-  margin-bottom: 31px;
+  margin-bottom: 21px;
   font-family: 'Circe';
   font-size: 20px;
   font-weight: 400;
@@ -557,6 +564,7 @@ input[type="submit"] {
       font-size: 17px; } }
 
 .delivery-text {
+  text-align: start;
   margin-bottom: 10px;
   font-family: 'Circe';
   font-size: 20px;
@@ -565,6 +573,9 @@ input[type="submit"] {
   @media (max-width: 770px) {
     .delivery-text {
       font-size: 17px; } }
+  @media (max-width: 360px) {
+    .delivery-text {
+      font-size: 15px; } }
 
 .button-thanks {
   margin-top: 10px; }

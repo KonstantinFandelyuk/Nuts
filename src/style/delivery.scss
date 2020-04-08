@@ -27,6 +27,14 @@
 	border-radius: 12px;
 	max-width: 800px;
 	margin: 0 auto;
+
+	@media (max-width: 600px) {
+		padding: 30px;
+	}
+
+	@media (max-width: 500px) {
+		padding: 20px;
+	}
 }
 
 .delivery__list-item {
@@ -58,9 +66,10 @@
 }
 
 .delivery-description {
+	text-transform: uppercase;
 	max-width: 600px;
 	margin-top: 30px;
-	margin-bottom: 31px;
+	margin-bottom: 21px;
 	font-family: 'Circe';
 	font-size: 20px;
 	font-weight: 400;
@@ -72,6 +81,7 @@
 }
 
 .delivery-text {
+	text-align: start;
 	margin-bottom: 10px;
 	font-family: 'Circe';
 	font-size: 20px;
@@ -80,6 +90,10 @@
 
 	@media (max-width: 770px) {
 		font-size: 17px;
+	}
+
+	@media (max-width: 360px) {
+		font-size: 15px;
 	}
 }
 
