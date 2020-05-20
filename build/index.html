@@ -97,6 +97,14 @@
             </div>
           </div>
           <div class="section__row-2">
+            <div class="cart">
+              <div class="cart-circle">
+                <svg class="cart-svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path class="cart-svg-path" d="M11.5 7h7c.277 0 .5.223.5.5s-.223.5-.5.5h-7c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zm-7 0c-.824 0-1.422.694-1.498 1.45l-2 20C.914 29.33 1.676 30 2.5 30h25c.824 0 1.586-.672 1.498-1.55l-2-20C26.922 7.695 26.324 7 25.5 7h-3c-.67 0-.65 1 0 1h3c.284 0 .467.204.502.55l2 20c.023.225-.218.45-.502.45h-25c-.284 0-.525-.225-.502-.45l2-20c.035-.346.218-.55.502-.55h3c.67 0 .654-1 0-1zM15 0c-3.308 0-6 2.692-6 6v4.5c0 .665 1 .665 1 0V6c0-2.767 2.233-5 5-5s5 2.233 5 5v4.5c0 .665 1 .657 1 0V6c0-3.308-2.692-6-6-6z"></path>
+                </svg>
+                <div class="cart-sum"></div>
+              </div>
+            </div>
             <form class="ajax-contact-form" action="contact">
               <div class="product" id="product">
                 <div class="product__list">
@@ -105,10 +113,10 @@
                     <div class="product-title">ФУНДУК СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/funduc.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФУНДУК 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 350 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФУНДУК 1кг" data-price="350"><i class="far fa-square"></i><span class="product-tara">1кг / 350 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФУНДУК 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 175 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФУНДУК 0.5кг" data-price="175"><i class="far fa-square"></i><span class="product-tara">500г / 175 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -116,10 +124,10 @@
                     <div class="product-title">МИНДАЛЬ СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/mindal.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="МИНДАЛЬ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 355 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="МИНДАЛЬ 1кг" data-price="355"><i class="far fa-square"></i><span class="product-tara">1кг / 355 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="МИНДАЛЬ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 180 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="МИНДАЛЬ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 180 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -127,10 +135,10 @@
                     <div class="product-title">КЕШЬЮ СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/keshq.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕШЬЮ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 390 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕШЬЮ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 390 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕШЬЮ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 195 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕШЬЮ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 195 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -138,10 +146,10 @@
                     <div class="product-title">БРАЗИЛЬСКИЙ СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/brazil.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 450 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 450 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 225 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 225 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -149,10 +157,10 @@
                     <div class="product-title">ФИСТАШКА СЫРАЯ</div>
                     <div class="product-photo"><img src="img/section/shop/product/fistash.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 480 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 480 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 240 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 240 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -160,10 +168,10 @@
                     <div class="product-title">ГРЕЦКИЙ СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/gree.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 220 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 220 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 110 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 110 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -171,10 +179,10 @@
                     <div class="product-title">МАКАДАМИЯ  СЫРАЯ</div>
                     <div class="product-photo"><img src="img/section/shop/product/makadamiya.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 920 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 920 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 460 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 460 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -182,10 +190,10 @@
                     <div class="product-title">ПЕКАН СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/pekan.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 590 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 590 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 295 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 295 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -193,10 +201,10 @@
                     <div class="product-title">КЕДР СЫРОЙ</div>
                     <div class="product-photo"><img src="img/section/shop/product/kedr.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕДР СЫРОЙ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 690 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕДР СЫРОЙ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 690 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕДР СЫРОЙ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 340 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КЕДР СЫРОЙ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 340 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -204,10 +212,10 @@
                     <div class="product-title">ИЗЮМ Натуральный</div>
                     <div class="product-photo"><img src="img/section/shop/product/izum.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 195 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 195 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 100 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 100 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -215,10 +223,10 @@
                     <div class="product-title">КУРАГА Натуральная</div>
                     <div class="product-photo"><img src="img/section/shop/product/kuraga.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 195 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 195 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 100 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 100 грн</span>
                     </label>
                   </div>
                   <div class="product__list-item">
@@ -226,10 +234,10 @@
                     <div class="product-title">Чернослив</div>
                     <div class="product-photo"><img src="img/section/shop/product/finik2.jpg" width="415px" height="278px" alt=""></div>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 1кг"><i class="far fa-square"></i><span class="product-tara">1кг / 140 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 1кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">1кг / 140 грн</span>
                     </label>
                     <label>
-                      <input class="prodcut-price" type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 0.5кг"><i class="far fa-square"></i><span class="product-tara">500г / 70 грн</span>
+                      <input class="prodcut-price" type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 0.5кг" data-price="180"><i class="far fa-square"></i><span class="product-tara">500г / 70 грн</span>
                     </label>
                   </div>
                 </div>
@@ -247,7 +255,7 @@
                               <label for="contact_name">Ваше имя</label>
                             </div>
                             <div class="shop-form__item">
-                              <input type="tel" name="tel" value="" id="contact_phone" placeholder="ex.(067)-123-4567" required>
+                              <input type="tel" name="tel" value="" id="contact_phone" required>
                               <label for="contact_phone">Ваш телефон</label>
                             </div>
                             <button class="button button__buy" type="submit" name="buy" onclick="dataLayer.push ({'event': 'formSubmitOK'});">Заказать</button>

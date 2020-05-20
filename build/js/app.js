@@ -3,9 +3,9 @@ const modalElement = document.getElementById("modal");
 const buttonElement = document.querySelector(".burger__menu");
 const closeModalElement = document.querySelector(".modal__close");
 let productList = document.querySelector(".product__list");
-let modalDelivery = document.querySelector(".delivery-modal");
+// let modalDelivery = document.querySelector(".delivery-modal");
 let buttonThanks = document.querySelector(".button-thanks");
-let deliveryList = document.querySelector(".delivery__list");
+// let deliveryList = document.querySelector(".delivery__list");
 
 buttonElement.addEventListener("click", function () {
   bodyElement.classList.add("hidden-scroll");
@@ -69,70 +69,33 @@ buttonThanks.onclick = () => {
   }
 };
 
-// let productListPosTop = productList.getBoundingClientRect().top;
+let resPrice = [];
+//
 
-// let scroll = () => {
-//   if (window.pageYOffset >= productListPosTop - 800) {
-//     window.removeEventListener("scroll", scroll); // Важно
-//     modalDelivery.classList.add("active");
-//     deliveryList.classList.add("fadeInDown");
-//   }
-// };
-// window.addEventListener("scroll", scroll);
+productList.addEventListener("change", showCart);
 
-const isNumericInput = (event) => {
-  const key = event.keyCode;
-  return (
-    (key >= 48 && key <= 57) || // Allow number line
-    (key >= 96 && key <= 105) // Allow number pad
-  );
-};
-
-const isModifierKey = (event) => {
-  const key = event.keyCode;
-  return (
-    event.shiftKey === true ||
-    key === 35 ||
-    key === 36 || // Allow Shift, Home, End
-    key === 8 ||
-    key === 9 ||
-    key === 13 ||
-    key === 46 || // Allow Backspace, Tab, Enter, Delete
-    (key > 36 && key < 41) || // Allow left, up, right, down
-    // Allow Ctrl/Command + A,C,V,X,Z
-    ((event.ctrlKey === true || event.metaKey === true) &&
-      (key === 65 || key === 67 || key === 86 || key === 88 || key === 90))
-  );
-};
-
-const enforceFormat = (event) => {
-  // Input must be of a valid number format or a modifier key, and not longer than ten digits
-  if (!isNumericInput(event) && !isModifierKey(event)) {
-    event.preventDefault();
+function showCart() {
+  let inputCheckbox = event.target.closest("input[type=checkbox]");
+  const cartSum = document.querySelector(".cart-sum");
+  //
+  if (inputCheckbox.checked === true) {
+    resPrice.push(+inputCheckbox.dataset.price);
+    document.querySelector(".cart").style.display = "block";
+    document.querySelector(".cart").classList.toggle("cart-active");
   }
-};
-
-const formatToPhone = (event) => {
-  if (isModifierKey(event)) {
-    return;
+  if (inputCheckbox.checked === false) {
+    resPrice.splice(-1, 1);
   }
-
-  // I am lazy and don't like to type things more than once
-  const target = event.target;
-  const input = event.target.value.replace(/\D/g, "").substring(0, 10); // First ten digits of input only
-  const zip = input.substring(0, 3);
-  const middle = input.substring(3, 6);
-  const last = input.substring(6, 10);
-
-  if (input.length > 6) {
-    target.value = `(${zip}) ${middle} - ${last}`;
-  } else if (input.length > 3) {
-    target.value = `(${zip}) ${middle}`;
-  } else if (input.length > 0) {
-    target.value = `(${zip}`;
-  }
-};
-
-const inputElement = document.getElementById("contact_phone");
-inputElement.addEventListener("keydown", enforceFormat);
-inputElement.addEventListener("keyup", formatToPhone);
+  //
+  let result = resPrice.reduce(function (sum, current) {
+    return sum + current;
+  }, 0);
+  cartSum.innerHTML = `${result}<br>грн`;
+}
+function cartIcon() {
+  const cartIcon = document.querySelector(".cart");
+  let productListWidth = productList.getBoundingClientRect().left;
+  console.log(productListWidth);
+  cartIcon.style.right = `${productListWidth + 100}px`;
+}
+cartIcon();
